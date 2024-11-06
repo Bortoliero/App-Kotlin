@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageViewNavegar" type="id" />
+    <item name="ir_segunda_tela" type="id"  />
+    <item name="goTemperature" type="id" />
+    <item name="icon" type="id" />
+</resources>

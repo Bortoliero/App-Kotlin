@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/estrada"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-13dp"
+    tools:layout_editor_absoluteY="105dp">
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Distância total (km)"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/fuelConsumption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/fuelConsumption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="31dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Consumo (km/L)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/numberTolls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distance"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/numberTolls"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="21dp"
+        android:background="#FFFFFF"
+        android:hint="Quantidade de pedágios"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/averageSpeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuelConsumption"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/averageSpeed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="46dp"
+        android:background="#FFFFFF"
+        android:hint="Velocidade média (km/h)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/calculateTravel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberTolls"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/calculateTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="Calcular Viagem"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/averageSpeed" />
+
+    <Button
+        android:id="@+id/goTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="174dp"
+        android:paddingTop="20dp"
+        android:text="Resultado:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateTravel"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
