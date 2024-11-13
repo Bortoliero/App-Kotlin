@@ -58,5 +58,14 @@ class CustoViagem : AppCompatActivity() {
             }
 
         }
+
+        binding.icVoltar.setOnClickListener{
+            val voltarTemperatura = Intent(this, Temperatura::class.java)
+            startActivity(voltarTemperatura)
+        }
+        binding.icNavegar.setOnClickListener{
+            val navegarTelaInicial = Intent(this, MainActivity::class.java)
+            startActivity(navegarTelaInicial)
+        }
     }
 }

@@ -9,18 +9,15 @@ import com.example.telas01.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
-        binding.icon.setOnClickListener{
-            val intent = Intent(this, SegundaTela::class.java)
-            startActivity(intent)
+        binding.icNavegar.setOnClickListener{
+            val navegarSegundaTela = Intent(this, Conversor::class.java)
+            startActivity(navegarSegundaTela)
         }
     }
 }

@@ -25,5 +25,14 @@ class Temperatura : AppCompatActivity() {
                 binding.textResultado.text = "TEMPERATURA INVÁLIDA"
             }
         }
+
+        binding.icVoltar.setOnClickListener{
+            val voltarConversor = Intent(this, Conversor::class.java)
+            startActivity(voltarConversor)
+        }
+        binding.icNavegar.setOnClickListener{
+            val navegarQuartaTela = Intent(this, CustoViagem::class.java)
+            startActivity(navegarQuartaTela)
+        }   
     }
 }

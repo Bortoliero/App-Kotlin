@@ -21,7 +21,16 @@ class Conversor : AppCompatActivity() {
 
             val dolares = String.format("%.2f", euros * 0.8).toDouble()
 
-            binding.textDolares.text = dolares + "$"
+            binding.textDolares.text = dolares.toString() + "$"
+        }
+
+        binding.icVoltar.setOnClickListener{
+            val voltarTelaInicial = Intent(this, MainActivity::class.java)
+            startActivity(voltarTelaInicial)
+        }
+        binding.icNavegar.setOnClickListener{
+            val navegarTerceiraTela = Intent(this, Temperatura::class.java)
+            startActivity(navegarTerceiraTela)
         }
     }
 

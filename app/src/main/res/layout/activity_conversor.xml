@@ -2,34 +2,63 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Conversor">
 
     <EditText
         android:id="@+id/editEuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="262dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="262dp" />
+        android:text="Digite o valor em euro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_converter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="508dp" />
+        android:layout_marginBottom="170dp"
+        android:text="converter para dolar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/text_dolares"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="404dp" />
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="93dp"
+        android:text="valor convertido"
+        app:layout_constraintBottom_toTopOf="@+id/button_converter"
+        app:layout_constraintStart_toStartOf="@+id/button_converter"
+        app:layout_constraintTop_toBottomOf="@+id/editEuro" />
+
+    <ImageView
+        android:id="@+id/icNavegar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/ic_navegar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_converter" />
+
+    <ImageView
+        android:id="@+id/icVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:src="@drawable/ic_voltar"
+        app:layout_constraintEnd_toStartOf="@+id/icNavegar"
+        app:layout_constraintTop_toTopOf="@+id/icNavegar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

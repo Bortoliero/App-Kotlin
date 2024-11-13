@@ -5,35 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#09AAFF"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Primeira Tela"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
-
-<!--    <ImageView
-        android:id="@+id/ir_segunda_tela"
+        android:text="Tela Inicial!"
+        />
+    
+    <ImageView
+        android:id="@+id/icNavegar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:src="@drawable/ic_navegar" />
--->
-
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@drawable/ic_navegar" />
-
-
+        android:src="@drawable/ic_navegar"
+        android:layout_marginTop="10dp"
+        />
 </LinearLayout>
