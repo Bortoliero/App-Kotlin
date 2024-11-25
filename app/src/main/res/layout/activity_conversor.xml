@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="262dp"
         android:ems="10"
+        android:hint="Digite o valor em euro"
         android:inputType="text"
-        android:text="Digite o valor em euro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
